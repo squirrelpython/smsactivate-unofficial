@@ -293,7 +293,7 @@ class SMSActivateAPI:
     def getRentServicesAndCountries(self, time = None, operator = None, country = None):
         payload = {'api_key': self.api_key, 'action': 'getRentServicesAndCountries'}
         if time:
-            payload['time'] = time
+            payload['rent_time'] = time
         if operator:
             payload['operator'] = operator
         if country:
